@@ -1,5 +1,5 @@
-@database = myDatabase
-@collection = myCollection
+@database = BigBoxStore 
+@collection = GroceryInventory
 @domain = http://localhost
 @port = 3000
 ###
@@ -12,8 +12,11 @@ Content-Type: application/json
 
 {
   "document": {
-    "name": "Jane",
-    "age": 30
+    "item": "steak",
+    "food_group": "meat",
+    "price_in_usd": 23.0,
+    "quantity": 43,
+    "calories_per_100g": 321
   }
 }
 
